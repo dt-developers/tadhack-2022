@@ -1,0 +1,78 @@
+#!/usr/bin/env bash
+
+function rainbowify() {
+	local COLOR=$(( 15 + $RANDOM % 215 ))
+	echo -ne "\e[38;5;${COLOR}m$@\e[m"
+}
+
+EMOJI=(⛲ 💩 🤓 🪟 🌈 ❤️ 😊 ✨ 🦾 🧑‍💻 🔥 👍 😂 💀 🏳️‍🌈 🍎 🤳  👉 🎉 😍 👀 😉 🥰 ⭐ 🐧 👇 🤔 🤩 🥺 👻 🥳 👩‍💻 ➡️ 🥲)
+
+NAME="$1"
+shift
+if [ -z "$NAME" ]; then 
+	rainbowify "Hey, who are you? "
+	read NAME;
+fi
+NAME="${NAME:="No Name"}"
+
+
+EMOTE="$1"
+shift
+if [ -z "${EMOTE}" ]; then
+	rainbowify "What is your favorite number from 0 to ${#EMOJI[@]}? "
+	read EMOTE 
+fi
+EMOTE=${EMOJI[$EMOTE]}
+EMOTE="${EMOTE:="⛔"}"
+
+convert \
+	-pointsize 38 \
+	-gravity Center \
+	-background None \
+	pango:"${EMOTE}" \
+	\( \
+		+clone \
+		-background white \
+		-shadow 100x4 \
+		-channel A \
+		-level 0,3% \
+		+channel \
+	\) \
+	+swap \
+	+repage \
+	-composite \
+	/tmp/badge.emote.png
+
+convert \
+	-pointsize 24 \
+	-background white \
+	hello.jpg \
+	-font Candice \
+	-background none \
+	\( \
+		-gravity Center \
+		-fill DarkRed \
+		-resize 420x150 \
+		pango:"${NAME}" \
+	\) \
+	-composite \
+	\( \
+		-gravity South \
+		/tmp/badge.emote.png \
+	\) \
+	-composite \
+	-rotate 270 \
+	/tmp/badge.png
+
+ppa6 -m 82:21:05:2F:2D:32 -pA6 -b 100 -c 1 -i /tmp/badge.png
+
+convert -rotate 90 /tmp/badge.png png:- | chafa -
+
+echo
+rainbowify 'Done. Is the next one ready? '
+read AGAIN
+reset
+
+$0
+
+
