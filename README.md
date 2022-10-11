@@ -13,4 +13,11 @@ Home of the TADHack Berlin location in 2022. Here we store general information t
 
 The script [hello](./hello) is using bash, imagemagick and pythons ppa6 to generat a 'hello my name is badge'. 
 
-Any feedback is appreciated.
+<img src="./badge.jpg" width="200"/>
+
+# Feedback
+
+Any feedback is appreciated:
+
+* developers@telekom.de
+* [issuea](/issues)
