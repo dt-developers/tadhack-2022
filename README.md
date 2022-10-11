@@ -1,6 +1,6 @@
 # TADhack 2022 in Berlin
 
-Home of the TADHack Berlin location in 2022. Here we store general information things, like the badge creator.
+Home of the TADHack Berlin location in 2022. Here we store general information things.
 
 ## Links to 5G API description
 
@@ -20,4 +20,4 @@ The script [hello](./hello) is using bash, imagemagick and pythons ppa6 to gener
 Any feedback is appreciated:
 
 * developers@telekom.de
-* [issuea](/issues)
+* [issues](https://github.com/dt-developers/tadhack-2022/issues)
