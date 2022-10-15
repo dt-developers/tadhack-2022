@@ -74,7 +74,7 @@ convert \
 
 if command -v ppa6 > /dev/null; then
 	if [ ! -z "$A6_PRINTER" ]; then
-		ppa6 -m "$A6_PRINTER" -pA6 -b 100 -c 1 -i $TMP/badge.png
+		ppa6 -m "$A6_PRINTER" -pA6 -b 100 -c 2 -i $TMP/badge.png
 	else
 		rainbowify 'Please set printer mac address as A6_PRINTER env.\n'
 	fi
