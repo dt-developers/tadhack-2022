@@ -14,11 +14,27 @@ For connecting online, please use
 * API Descriptions Screenshots
     - <img src="./througputApi.jpg" width="100" /> - <img src="./latencyApi.jpg" width="100" />
 
-## hello
+## Hacks (and showcases)
 
-The script [hello](./hello) is using bash, imagemagick and pythons ppa6 to generat a 'hello my name is badge'. 
+Summary youtube: https://www.youtube.com/playlist?list=PLEihHgy4xh473ywYLlnebRC-lO1oMk39b.
 
-<img src="./badge.jpg" width="200"/>
+### Afone and 5G APIs
+
+A SiP phone app with a dedicated make my network better button? That was one of the hacks done in here. Based on https://github.com/automat-berlin/afone and visualized here: https://www.youtube.com/watch?v=z1ceAWDxqiU.
+
+### 5Geeeeeeeeee
+
+Quick hack on how to visualize 5G APIs in a 3d(ish) environment. 
+
+Comment and look at code [here](https://github.com/dt-developers/tadhack-2022-5geeeeeee).
+
+Watch video here: https://www.youtube.com/watch?v=A4ZEjhT8M0g
+
+### hello
+
+The script [hello](./hello) is using bash, imagemagick and pythons ppa6 to generat a 'hello my name is badge'.
+
+
 
 # Feedback
 
