@@ -30,11 +30,6 @@ Comment and look at code [here](https://github.com/dt-developers/tadhack-2022-5g
 
 Watch video here: https://www.youtube.com/watch?v=A4ZEjhT8M0g
 
-### hello
-
-The script [hello](./hello) is using bash, imagemagick and pythons ppa6 to generat a 'hello my name is badge'.
-
-
 # Feedback
 
 Any feedback is appreciated:
