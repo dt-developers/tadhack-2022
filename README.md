@@ -35,7 +35,6 @@ Watch video here: https://www.youtube.com/watch?v=A4ZEjhT8M0g
 The script [hello](./hello) is using bash, imagemagick and pythons ppa6 to generat a 'hello my name is badge'.
 
 
-
 # Feedback
 
 Any feedback is appreciated:
